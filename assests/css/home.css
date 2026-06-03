@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f8f9fc;
+    color: #1e1e2f;
+    line-height: 1.6;
+}
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(180deg, #ffffff 0%, #f6f7fb 100%);
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #1f1f2e;
+    margin-bottom: 16px;
+}
+
+.hero-subtitle {
+    font-size: 17px;
+    max-width: 720px;
+    margin: 0 auto;
+    color: #6b7280;
+    line-height: 1.7;
+}
+
+.hero-section .mt-4 {
+    margin-top: 28px !important;
+}
+
+.hero-section .btn {
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 12px 24px;
+    font-size: 15px;
+    transition: all 0.25s ease;
+    text-decoration: none;
+}
+
+.hero-section .btn-primary {
+    background: #6d5efc;
+    border: none;
+    color: #fff;
+    box-shadow: 0 8px 18px rgba(109, 94, 252, 0.18);
+}
+
+.hero-section .btn-primary:hover {
+    background: #5b4df0;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(109, 94, 252, 0.25);
+}
+
+.hero-section .btn-outline-primary {
+    border: 1.5px solid #6d5efc;
+    color: #6d5efc;
+    background: #ffffff;
+}
+
+.hero-section .btn-outline-primary:hover {
+    background: #6d5efc;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(109, 94, 252, 0.2);
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 34px;
+    }
+
+    .hero-subtitle {
+        font-size: 15px;
+    }
+}
+

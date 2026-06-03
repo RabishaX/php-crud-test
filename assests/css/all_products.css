@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f5f6fa;
+}
+
+/* ─── PRODUCTS PAGE ─── */
+.products-app {
+    padding: 32px 40px;
+}
+
+.products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.products-header h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 4px;
+}
+
+.products-header p {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.products-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* ─── SEARCH ─── */
+.products-search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    padding: 8px 12px;
+    border-radius: 10px;
+    min-width: 200px;
+}
+
+.products-search i {
+    font-size: 15px;
+    color: #9ca3af;
+}
+
+.products-search input {
+    border: none;
+    outline: none;
+    font-size: 13px;
+    font-family: inherit;
+    color: #374151;
+    width: 100%;
+    background: transparent;
+}
+
+.products-search input::placeholder {
+    color: #9ca3af;
+}
+
+/* ─── BUTTONS ─── */
+.products-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #111;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.15s;
+}
+
+.products-btn i {
+    font-size: 15px;
+}
+
+.products-btn:hover {
+    background: #f9fafb;
+}
+
+.products-btn.primary {
+    background: #6d5efc;
+    color: #fff;
+    border-color: transparent;
+}
+
+.products-btn.primary:hover {
+    background: #5a4de0;
+}
+
+/* ─── STATS ─── */
+.products-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.products-stat-card {
+    background: #fff;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    padding: 16px 18px;
+}
+
+.products-stat-label {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #6b7280;
+    margin-bottom: 8px;
+}
+
+.products-stat-val {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111;
+}
+
+.products-stat-sub {
+    font-size: 11px;
+    color: #6b7280;
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.products-dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.products-dot.green { background: #22c55e; }
+.products-dot.warn  { background: #f59e0b; }
+.products-dot.info  { background: #6d5efc; }
+
+/* ─── TABLE CARD ─── */
+.products-card {
+    background: #fff;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+}
+
+.products-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.products-table thead tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.products-table thead th {
+    padding: 13px 16px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 600;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+}
+
+.products-table tbody td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #f1f1f1;
+    color: #111;
+    vertical-align: middle;
+}
+
+.products-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.products-table tbody tr:hover td {
+    background: #f9f8ff;
+}
+
+.products-table img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.products-id {
+    font-size: 12px;
+    color: #6b7280;
+    font-weight: 500;
+    font-family: monospace;
+}
+
+.products-name {
+    font-weight: 600;
+    color: #111;
+}
+
+.products-price {
+    font-weight: 600;
+    color: #111;
+}
+
+.products-price span {
+    font-size: 11px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-left: 1px;
+}
+
+/* ─── ROW ACTIONS ─── */
+.products-row-actions {
+    display: flex;
+    gap: 6px;
+}
+
+.products-act {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #111;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.products-act:hover {
+    background: #f9fafb;
+}
+
+.products-act.del {
+    color: #dc2626;
+    border-color: #fecaca;
+}
+
+.products-act.del:hover {
+    background: #fee2e2;
+}
+
+/* ─── PAGINATION ─── */
+.products-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px 0;
+}
+
+.products-pag-info {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.products-pag-btns {
+    display: flex;
+    gap: 4px;
+}
+
+.products-pag-btns a {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #6b7280;
+    transition: background 0.15s;
+}
+
+.products-pag-btns a:hover {
+    background: #f9fafb;
+}
+
+.products-pag-btns a.active {
+    background: #6d5efc;
+    color: #fff;
+    border-color: transparent;
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 768px) {
+    .products-app {
+        padding: 20px 16px;
+    }
+
+    .products-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .products-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .products-table thead th:nth-child(2),
+    .products-table tbody td:nth-child(2) {
+        display: none;
+    }
+}
